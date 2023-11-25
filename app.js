@@ -19,6 +19,7 @@ if(navigator.geolocation){
 }
 
 takeLocation.addEventListener('click',()=>{
+    localAtual.innerHTML="Buscando..."
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(localizacaoAceita, localizacaoRecusada)
     } else {
