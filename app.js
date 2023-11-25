@@ -42,6 +42,7 @@ function localizacaoAceita(pos){
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${APIkey}&lang=pt_br&units=metric`)
     .then(data => data.json())
     .then((locationData)=>{
+        localAtual.innerHTML="Buscando..."
         updateContent(locationData)
     })
 }
@@ -51,7 +52,8 @@ function localizacaoRecusada(pos){
 }
 
 searchLocation.addEventListener("click", () => {
-  localAtual.innerHTML = local.value;
+    localAtual.innerHTML="Buscando..."
+
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${local.value}&appid=${APIkey}&units=metric&lang=pt_br`
   )
