@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previsão do Tempo</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <div class="localDiv">
+        <input type="text" name="local" id="local" /><button
+          id="searchLocation"
+        >
+          <img src="img/lupa.png" alt="Lupa" />
+        </button>
+      </div>
+      <button id="takeLocation">Usar minha localização</button>
+      <h2 id="localAtual">São Paulo</h2>
+      <div class="temp">
+        <p>Temperatura Atual: <span id="weatherTemp">0</span>ºC</p>
+        <p>Máxima: <span id="TempMax">0</span>ºC</p>
+        <p>Mínima: <span id="TempMin">0</span>ºC</p>
+        <p>Sensação Térmica: <span id="feels_like">0</span>ºC</p>
+      </div>
+      <div>
+        <p>Hoje: <span id="weatherDesc"></span></p>
+      </div>
+      <p>Umidade: <span id="weatherHumidity">0</span>%</p>
+    </section>
+    <footer><p>Desenvolvido por Kaique Mascarenhas</p></footer>
+  </body>
+</html>
