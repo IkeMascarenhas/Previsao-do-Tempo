@@ -10,12 +10,16 @@
     outline: none;
 }
 
+html{
+    overflow: hidden;
+}
+
 body{
     width: 100vw;
     height: 100vh;
     display: grid;
     place-content: center;
-    background: black url(img/background-weather.jpg) fixed center center /cover;
+    background: black url(img/background-weather_2.jpg) fixed center top /cover;
     overflow: hidden;
 }
 
@@ -142,5 +146,9 @@ footer p{
         width: 90%;
         aspect-ratio: 1/1;
         object-fit: contain;
+    }
+
+    footer{
+        bottom: 0;
     }
 }
